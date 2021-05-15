@@ -37,5 +37,3 @@ CREATE TABLE ProductTag (
         REFERENCES Tag(id),
   PRIMARY KEY (id)
 );
-
-ALTER TABLE Category AUTO_INCREMENT = 1
