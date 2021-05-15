@@ -7,7 +7,9 @@ This application displays the backend of an E-Commerce site with the use of Expr
 
 ## Application Display  
 
-[Please click here link to view application demo:](https://drive.google.com/file/d/1BM4ySFwQAMCXGqlXbVgYegw-pbw2Dy9n/view?usp=sharing)
+View Application video - [Here](https://drive.google.com/file/d/1BM4ySFwQAMCXGqlXbVgYegw-pbw2Dy9n/view?usp=sharing)
+
+Preview of Application:
 ![Application image](./images/app-screenshot.png)
 
 ## Usage & Installation 
