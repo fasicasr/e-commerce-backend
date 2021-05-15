@@ -7,7 +7,6 @@ router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   try {
-    console.log('HELP')
     const tagData = await Tag.findAll({
       include: [{ model: Product }],
     });
@@ -39,14 +38,25 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   // create a new tag
-  try {
-    const tagData= await Tag.create({
-      tag_name: req.body.tag_name,
+  Tag.create(req.body)
+    .then((tagData) => {
+      console.log(req.body.productsIds.length) 
+      if (req.body.productsIds.length) {
+        const productTagIdArr = req.body.productsIds.map((product_id) => {
+          return {
+            product_id, tag_id: tagData.id,
+          };
+        });
+        return ProductTag.bulkCreate(productTagIdArr);
+      }
+   
+      res.status(200).json(tagData);
+    })
+    .then((productTagIds) => res.status(200).json(productTagIds))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
     });
-    res.status(200).json(tagData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
 });
 
 router.put('/:id', async (req, res) => {
@@ -59,7 +69,7 @@ router.put('/:id', async (req, res) => {
       },
     });
 
-    if (!tagData) {
+    if (!tagData[0]) {
       res.status(404).json({ message: "Tag not found!" });
       return;
     }

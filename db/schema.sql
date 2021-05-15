@@ -6,13 +6,13 @@ USE ecommerce_db;
 
 CREATE TABLE Category (
   id INT NOT NULL AUTO_INCREMENT,
-  category_name VARCHAR(30) NOT NULL,
+  category_name VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE Product (
   id INT NOT NULL AUTO_INCREMENT,
-  product_name VARCHAR(30) NOT NULL,
+  product_name VARCHAR(50) NOT NULL,
   price DECIMAL NOT NULL,
   stock INT NOT NULL DEFAULT 10,
   category_id INT,
@@ -23,7 +23,7 @@ CREATE TABLE Product (
 
 CREATE TABLE Tag (
   id INT NOT NULL AUTO_INCREMENT,
-  tag_name VARCHAR(30) NULL,
+  tag_name VARCHAR(50) NULL,
   PRIMARY KEY (id)
 );
 
