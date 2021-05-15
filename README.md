@@ -8,14 +8,14 @@ This application displays the backend of an E-Commerce site with the use of Expr
 ## Application Display  
 
 [Please click here link to view application demo:](https://drive.google.com/file/d/1BM4ySFwQAMCXGqlXbVgYegw-pbw2Dy9n/view?usp=sharing)
-
+![Application image](./images/app-screenshot.png)
 
 ## Usage & Installation 
 
 This app will allow users to view all, Update, create and delete categories, products, and tags using routes
 
 * Cloine repository using the ssh key below:
-  git@github.com:fasicasr/e-commerce-backend.git
+  "git@github.com:fasicasr/e-commerce-backend.git"
 * Install dependencies - npm, express, squelize 
 * Create database in MYSQL: (ecommerce_db)
 * Run seed in terminal - npm run seed 
