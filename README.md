@@ -5,11 +5,14 @@
 This application displays the backend of an E-Commerce site with the use of Express.js API to use Sequelize to interact with a MySQL database. This application will allow users to view all, Update, create and delete categories, products, and tags.
 
 
-## Application Video 
+## Application Display  
 
-[Please click here link to view application demo:]()
+[Please click here link to view application demo:](https://drive.google.com/file/d/1BM4ySFwQAMCXGqlXbVgYegw-pbw2Dy9n/view?usp=sharing)
 
-## Usage 
+
+## Usage & Installation 
+
+This app will allow users to view all, Update, create and delete categories, products, and tags using routes
 
 * Cloine repository using the ssh key below:
   git@github.com:fasicasr/e-commerce-backend.git
@@ -17,6 +20,7 @@ This application displays the backend of an E-Commerce site with the use of Expr
 * Create database in MYSQL: (ecommerce_db)
 * Run seed in terminal - npm run seed 
 * Start running application - node server.js
+* Once apil routes are properly implemented - run Insomnia to GET, POST, PUT, and DELETE(CRUD) the different routes. 
 
 ## Technologies 
 
