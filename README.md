@@ -41,5 +41,5 @@ Copyright © 2021
 ## Questions 
 
 * Github: https://github.com/fasicasr
-* Employee Tracker repository: https://github.com/fasicasr/e-commerce-backend
+* E-Commerce Backend repository: https://github.com/fasicasr/e-commerce-backend
 * Email: Fasicasr@gmail.com
